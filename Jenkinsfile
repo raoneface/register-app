@@ -12,7 +12,7 @@ pipeline {
 			cleanWs()
 		    }
 	    }
-		stages("Checout from SCM"){
+		stages("Checkout from SCM"){
 			steps{
 				git branch: 'main', credentialsId: 'github' , url: 'https://https://github.com/raoneface/register-app'
 			}
